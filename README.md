@@ -4,26 +4,26 @@
 
 ---
 
-## 🚀 Overview
+## Overview
 
 Enterprise-grade Kubernetes infrastructure for Django applications achieving 99.9% uptime through automated self-healing mechanisms, horizontal pod autoscaling (HPA) based on real-time CPU/memory metrics, zero-downtime rolling deployments with CI/CD integration, and containerized microservices architecture supporting 10,000+ concurrent users with sub-100ms response times.
 
 ---
 
-## ✨ Key Features
+## Features
 
-- 🔄 **Auto-Healing**: Automated pod recovery with liveness/readiness probes
-- 📈 **Horizontal Pod Autoscaling**: Dynamic scaling based on CPU/memory metrics (70-80% thresholds)
-- ⚡ **High Performance**: Sub-100ms response times with optimized resource allocation
-- 🛡️ **Zero-Downtime Deployments**: Rolling updates with configurable surge and unavailability policies
-- 📊 **Real-Time Monitoring**: Integrated Prometheus metrics and Grafana dashboards
-- 🔐 **Production Security**: RBAC policies, network policies, and secrets management
-- 🌐 **Load Balancing**: Intelligent traffic distribution across pod replicas
-- 📦 **Containerized Architecture**: Docker-based microservices with optimized image layers
+- **Auto-Healing**: Automated pod recovery with liveness/readiness probes
+- **Horizontal Pod Autoscaling**: Dynamic scaling based on CPU/memory metrics (70-80% thresholds)
+- **High Performance**: Sub-100ms response times with optimized resource allocation
+- **Zero-Downtime Deployments**: Rolling updates with configurable surge and unavailability policies
+- **Real-Time Monitoring**: Integrated Prometheus metrics and Grafana dashboards
+- **Production Security**: RBAC policies, network policies, and secrets management
+- **Load Balancing**: Intelligent traffic distribution across pod replicas
+- **Containerized Architecture**: Docker-based microservices with optimized image layers
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 | Tool | Version | Purpose |
 |------|---------|---------|
@@ -73,7 +73,7 @@ minikube addons enable metrics-server
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                         Load Balancer                        │
@@ -97,7 +97,7 @@ minikube addons enable metrics-server
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone and Build
 ```bash
@@ -147,7 +147,7 @@ while true; do wget -q -O- http://django-service.django-production.svc.cluster.l
 
 ---
 
-## ⚙️ Configuration Details
+## Configuration Details
 
 ### Deployment Strategy
 ```yaml
@@ -241,7 +241,7 @@ spec:
 
 ---
 
-## 🔄 CI/CD Pipeline
+## CI/CD Pipeline
 
 ### GitHub Actions Workflow
 ```yaml
@@ -340,7 +340,7 @@ jobs:
 
 ---
 
-## 📊 Monitoring & Observability
+## Monitoring & Observability
 
 ### Prometheus Integration
 ```bash
@@ -383,7 +383,7 @@ def my_view(request):
 
 ---
 
-## 🔒 Security Best Practices
+## Security Best Practices
 
 ### 1. Network Policies
 ```yaml
@@ -441,7 +441,7 @@ kubectl create secret generic django-secrets \
 
 ---
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### Results Achieved
 
@@ -463,7 +463,7 @@ kubectl create secret generic django-secrets \
 
 ---
 
-## 🧪 Testing & Validation
+## Testing & Validation
 ```bash
 # Load testing with k6
 k6 run --vus 100 --duration 5m loadtest.js
@@ -477,7 +477,7 @@ trivy image your-dockerhub-username/django-autopilot:latest
 
 ---
 
-## 📚 Project Structure
+## Project Structure
 ```
 Django-K8s-Autopilot/
 ├── k8s/
@@ -508,7 +508,7 @@ Django-K8s-Autopilot/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -520,13 +520,13 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Kubernetes community for excellent documentation
 - Django Software Foundation
@@ -535,6 +535,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by [Rohan Tikotekar](https://github.com/rohantikotekar)**
+**Built by [Rohan Tikotekar](https://github.com/rohantikotekar)**
 
 For questions or support, please open an issue or reach out via [LinkedIn](https://www.linkedin.com/in/rohantikotekar).
